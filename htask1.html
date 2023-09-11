@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Tasks 1</title>
+</head>
+<body>
+    <hr>
+    <ul>
+    <li>
+        <a href="http://kubsu.ru/">абсолютная гиперссылка на главную  КубГУ</a>
+        <br>
+     </li>
+    <li>
+        <a href="https://kubsu.ru/">абсолютная в протоколе https</a> 
+        <br>
+    </li>
+    <li>
+        <a href="http://kubsu.ru/"><img src="https://omaja.rs/wp-content/uploads/2023/03/200410-ehrman-hell-tease_wdcvtu-440x264.jpg" alt="Hell" > </a> <br>
+    </li>
+    <li>
+        <a href="/page2"> Сокращённая ссылка на внутренную страницу  (Получилось?) </a>
+        <br>
+    </li>
+    <li>
+        <a href="/htask1.html">Сокращённая ссылка на главную </a> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </li>
+    <li>
+        <a href="#top"> Top of the page (Ссылка на фрагмент текущей страницы)</a>
+        <br>
+    </li>
+    <li>
+        <a href="https://www.mclarenstore.com/collections/all?page=1&sort=newest&count=48"> Поддержим любимую команду! (Ссылка с 3 параметрами в URL)</a>
+        <br>
+    </li>
+    <li>
+        <p id="#About">Обо мне</p>
+        <p> Люблю спать   </p>
+        <a href="https://hlabynina28.github.io/htask1.html#About">Обо мне (ссылка с id в URL)</a>
+        <br>
+    </li>
+    <li>
+        <a href="./page2">Относительная на страницу в текущем каталоге</a>
+        <br>
+    </li>
+    <li>
+        <a href="/About/About.html"> Относительная на страницу в каталоге about </a>
+        <br>
+    </li>
+    <li>
+        
+        <a href="../pageOneBack.html">Относительная на страницу в каталоге уровнем выше текущего</a>
+        <br>
+    </li>
+    <li>
+        
+        <a href="../../PageTwoBack.html"> Относительная на страницу в каталоге двумя уровнями выше</a>
+        <br>
+    </li>
+    <li>
+        <p>Контекстная в тексте абзаца </p>
+        <br>
+        <p> В сезоне 2023 Макс Ферстаппен установил очередной <a href="https://www.forbes.ru/sport/495828-maks-ferstappen-ustanovil-novyj-rekord-formuly-1">рекорд</a></p>  
+        <br>
+    </li>
+    <li>
+        
+        <a href="https://ru.wikipedia.org/wiki/Сенна,_Айртон#McLaren_(1988—1993)">ссылку на фрагмент страницы стороннего сайта (Фрагмент биографии Сенны, где он выступал за McLaren id=#McLaren_(1988—1993))</a>
+        <br>
+    </li>
+    <li>
+        
+        <p>  Ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</p>
+        <img src="http://cdn-1.motorsport.com/images/amp/2y3x7Ey6/s6/charles-leclerc-ferrari-f1-75-.jpg" width="600" height="480" alt="PIC" usemap="#BOmap">
+        <map name="BOmap">
+            <area shape="rect" coords="10,10,300,120" href="https://img.redbull.com/images/c_fill,g_auto,w_1320,h_849/q_auto,f_auto/redbullcom/2023/5/28/up78rngg9uckz5wuwbgl/monaco-winning-feeling" alt="Прямоугольная область">
+            <area shape="circle" coords="340,290,180" href="https://imagesvc.timeincapp.com/v3/fan/image?url=https://beyondtheflag.com/wp-content/uploads/getty-images/2016/04/1139298814.jpeg&" alt="Круглая область">
+        </map>
+        <br>
+    </li>
+    <li>
+       
+       <a href>Пустой href</a>
+       <br>
+    </li>
+    <li>
+      
+      <a> Без href</a>
+      <br>
+    </li>
+    <li>
+        
+        <a href="https://htask1.html" rel="nofollow">Ссылка, по которой поисковикам запрещен переход </a>
+        <br>
+     </li>
+     <li>
+        
+        <!--noindex--><a href="https://htask1.html/page3">Запрещенная для индексации поисковиками</a><!--noindex-->
+        <br>
+     </li>
+     <li>
+        <ol>
+            <li><a href="#" title="One"> Нумерованный спсисок ссылок с подписями title<br></a></li>
+            <li><a href="#" title="One"> Нумерованный спсисок ссылок с подписями title</a></li>
+        </ol>
+    </li>
+    <li>
+        
+        <a href="ftp://user:password@example.com/myfile.zip">ссылку на файл на сервере FTP с авторизацией</a>
+
+    </li>
+
+    <form action="/" method="POST">
+
+        <label> Full name <br> <input type="text" placeholder="Enter your name" name="name"></label><br/>
+
+        <label>Phone number<br /><input type="tel" placeholder="Enter your phone number" name="phone"></label><br/>
+
+        <label>Email adress <br /><input type="email" placeholder="Enter your email adress" name="email"></label><br/>
+
+        <labe>Birth date <br /><input type="data" value="11/09/2023" name="date"></labe>
+
+        <br>Пол <br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Женский" />
+        Женский</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Мужской" />
+        Мужской</label><br />
+
+     <label>
+        Любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="JavaScript">JavaScript</option>
+          <option value="C" selected="selected">C</option>
+          <option value="C++" selected="selected">C++</option>
+          <option value="Pascal" selected="selected">Pascal</option>
+          <option value="PHP" selected="selected">PHP</option>
+          <option value="Python" selected="selected">Python</option>
+          <option value="Java" selected="selected">Java</option>
+          <option value="Haskel" selected="selected">Haskel</option>
+          <option value="Clojure" selected="selected">Clojure</option>
+          <option value="Prolog" selected="selected">Prolog</option>
+          <option value="Scala" selected="selected">Sclala</option>
+        </select>
+      </label><br />
+
+
+
+      <label>
+       Биография:<br />
+        <textarea name="field-name-2">Обо мне...</textarea>
+      </label><br />
+
+
+      Чекбокс:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        с контрактом ознакомлен (а)</label><br />
+        
+        Сохранить
+      <input type="submit" value="Сохранить" />
+    </form>
+
+    </ul>
+ <hr>
+</body>
+</html>
