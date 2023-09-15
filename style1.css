@@ -64,11 +64,7 @@ tr:nth-child(even){
        background-color: #5aa12e;
 }
 
-div{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}	
+
 
 .footer{
     line-height:120px;
