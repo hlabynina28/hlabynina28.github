@@ -1,0 +1,47 @@
+body {
+    background-color:#abc5aa;
+    font-size: 20px;
+}
+.name {
+    font-size: 30px;
+    color: white;
+}
+.heading{
+    height: 120px;
+    background-image: url(banner.jpg);
+}
+table { 
+   text-align: center;
+     border-collapse:collapse;
+   color:black;
+}
+table, th, td{
+    border: 1px solid black;
+}
+th{
+       background-color:#eede7a;
+   color:white;	
+}
+tr:nth-child(2n-1){
+       background-color: #d4f2aa;
+}
+tr:nth-child(even){
+       background-color: #5aa12e;
+}
+.footer{
+    line-height:120px;
+    font-size: 20 px;
+    background: #052f23;
+    color: white;
+    height: 100px;
+}
+@media screen and (min-width:800px) {
+     .navigation{
+        position:absolute;
+        width:50%;
+        text-align:right;
+        right:30px;
+        top:5px;
+       
+    }
+}
