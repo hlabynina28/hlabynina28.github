@@ -1,0 +1,35 @@
+.MainText{
+    text-align: center;
+    font-size:40px;
+}
+
+body{
+    background-color: rgb(145, 204, 137);
+}
+
+.bpopup{
+    width:100%;
+    min-height:100%;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.bpopup .bpopup-content{
+    margin:40px auto 0px auto;
+    width: 100%;
+    padding:10px;
+    background-color: #53485f;
+}
+.buttonPOPUP{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10%;
+}
+@media (min-width: 1080px) {
+    .bpopup .bpopup-content{
+    width: 400px;
+    }
+}
