@@ -4,6 +4,8 @@ $(document).ready(function(){
 
 function PopUpShow(){
     $("#popup").show();
+    const changeurl="#form"
+    history.pushState(null, "form",changeurl );
 }
 
 function PopUpHide(){
