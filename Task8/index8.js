@@ -7,6 +7,10 @@ function PopUpShow(){
     const changeurl="#form"
     history.pushState(null, "form",changeurl );
 }
+addEventListener("popstate",function(e){
+    window.history.back();
+    $("#popup").hide();
+},false);
 
 function PopUpHide(){
     $("#popup").hide();
