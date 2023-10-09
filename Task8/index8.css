@@ -28,7 +28,7 @@ body{
         align-items: center;
         padding-top: 10%;
 }
-@media (min-width: 1080px) {
+@media screen and (min-width: 800px) {
     .bpopup .bpopup-content{
     width: 400px;
     }
