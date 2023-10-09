@@ -1,55 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Task 6</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index6.css">
-        <script src="6.js" defer></script>
-        <script src="65.js" defer></script>
-    </head>
-    <body>
-      <form method="POST" id="form">
-        <h1>Выбирай и считай</h1>
-        <div class="kolvo">
-          <p>Введите количество товаров:</p>
-          <input clss="fieldk" type="text" id="fieldk" value="0">
+
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 8 </title>
+  <script src="https://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slapform@latest/slapform.min.css">
+  <script src="index8.js" defer></script>
+  <script src="https://carrier.formcarry.com/js/v1.js" defer></script>
+  <link rel="stylesheet" href="index8.css">
+
+</head>
+
+<body>
+ <div class="buttonPOPUP">
+   <button onClick="javascript:PopUpShow()">Обратная связь</button>      
+  </div>
+
+  <div class="bpopup" id="popup">
+    <div class="bpopup-content">
+      <form class="myForm" action="https://formcarry.com/s/9kBZ_-wwP_" method="POST" accept-charset="UTF-8">
+
+        <div class="form-group">
+          <div class="MainText">Обратная связь</div>
         </div>
-          <div class="myradios" id="myradios">
-              <label><input type="radio" name="myradio" value="M">Mystery Box</label>
-              <label><input type="radio" name="myradio" value="Hoodie SKY">Hoodie SKY</label>
-              <label><input type="radio" name="myradio" value="T">T-shirt Creative</label>
-          </div>
 
-            <select class="mylist" id="mylist">
-              <option selected type="list" value="Black"> Black</option>
-              <option type="list" value="White"> White</option>
-              <option type="list" value="Navy"> Navy</option>
-              <option type="list" value="Lime"> Lime</option>
-            </select>
+        <div class="form-group">
+          <input name="name" type="text" class="form-control required" placeholder="Имя" value="" required="required">
+        </div>
 
-            <div class="checkbox" id="checkbox">
-            <label><input type="checkbox" id="checkbox-checked"> TMNT Doodle</label>
-            </div>
+        <div class="form-group">
+          <input name="email" type="email" class="form-control required" placeholder="E-mail" required="required">
+        </div>
 
-          <div class="result6" id="result_6">
-              0
-          </div>
+        <div class="form-group">
+          <input name="phone" type="tel" class="form-control required" placeholder="Phone number" required="required">
+        </div>
+
+        <div class="form-group">
+          <input name="orgname" type="text" class="form-control required" placeholder="Organization name" required="required">
+        </div>
+
+        <div class="form-group">
+        <textarea name="message" class="form-control required" placeholder="Текст сообщения" required="required"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox" >
+          <input type="checkbox" name="checkbox" required="required"> Согласие с политикой обработки персональных данных</label>
+        </div>
+
+        <div class="btn-group" role="group" style="float: right; text-align: center;">
+          <button type="button" class="btn btn-primary" onClick="javascript:PopUpHide()">Отмена</button>
+          <button type="submit" class="btn btn-success">Отправить</button>
+        </div>
       </form>
-      <form method="POST" id="form2">
-        <p>Введите количество товаров:</p>
-         <input name="fieldk" type="text" id="field1" placeholder="Количество" value="0">
-          <p>Выберите товар:</p>
-    
-            <select class="s" id="s">
-            <option selected value="v1">Пицца "Маргарита" 360р</option>
-            <option value="v2">Пицца "4 сыра" 500р</option>
-            <option value="v3">Пицца "По-домашнему" 410р</option>
-            <option value="v4">Пицца "Ветчина и Сыр" 440р</option>
-            </select>
-    
-        <button id="button">Рассчитать</button>
-        <p id="result">Стоимость заказа:</p><br>
-        </form>
-    </body>
-</html>
